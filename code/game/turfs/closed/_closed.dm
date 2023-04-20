@@ -84,7 +84,9 @@
 	bullet_bounce_sound = null
 
 INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
-/* SKYRAT EDIT REMOVAL
+
+// EFFIGY EDIT REMOVE START - SPLASH
+/*
 /turf/closed/indestructible/splashscreen/Initialize(mapload)
 	. = ..()
 	SStitle.splash_turf = src
@@ -112,7 +114,12 @@ INITIALIZE_IMMEDIATE(/turf/closed/indestructible/splashscreen)
 			if(NAMEOF(src, icon))
 				SStitle.icon = icon
 				handle_generic_titlescreen_sizes()
+
+/turf/closed/indestructible/splashscreen/examine()
+	desc = pick(strings(SPLASH_FILE, "splashes"))
+	return ..()
 */
+// EFFIGY EDIT REMOVE END - SPLASH
 /turf/closed/indestructible/start_area
 	name = null
 	desc = null

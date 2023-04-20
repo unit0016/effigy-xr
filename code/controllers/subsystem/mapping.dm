@@ -407,7 +407,8 @@ Used by the AI doomsday and the self-destruct nuke.
 		SSautomapper.load_templates_from_cache(files)
 	// SKYRAT EDIT ADDITION END
 	if(!silent)
-		add_startup_message("Loaded [name] in [(REALTIMEOFDAY - start_time)/10]s!") //SKYRAT EDIT CHANGE
+	//	INIT_ANNOUNCE("Loaded [name] in [(REALTIMEOFDAY - start_time)/10]s!")
+		add_startup_message("Loaded [name] in [(REALTIMEOFDAY - start_time)/10]s!") // EFFIGY EDIT CHANGE - SPLASH
 	return parsed_maps
 
 /datum/controller/subsystem/mapping/proc/loadWorld()
@@ -419,7 +420,8 @@ Used by the AI doomsday and the self-destruct nuke.
 
 	// load the station
 	station_start = world.maxz + 1
-	add_startup_message("Loading [config.map_name]...") // SKYRAT EDIT CHANGE
+//	INIT_ANNOUNCE("Loading [config.map_name]...")
+	add_startup_message("Loading [config.map_name]...") // EFFIGY EDIT CHANGE - SPLASH
 	LoadGroup(FailedZs, "Station", config.map_path, config.map_file, config.traits, ZTRAITS_STATION)
 
 	if(SSdbcore.Connect())

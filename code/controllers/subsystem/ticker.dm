@@ -169,9 +169,8 @@ SUBSYSTEM_DEF(ticker)
 				send2chat(new /datum/tgs_message_content("<@&[CONFIG_GET(string/game_alert_role_id)]> Round **[GLOB.round_id]** starting on [SSmapping.config.map_name], [CONFIG_GET(string/servername)]! \nIf you wish to be pinged for game related stuff, go to <#[CONFIG_GET(string/role_assign_channel_id)]> and assign yourself the roles."), CONFIG_GET(string/channel_announce_new_game)) // SKYRAT EDIT - Role ping and round ID in game-alert
 			// SKYRAT EDIT END
 			current_state = GAME_STATE_PREGAME
-			SStitle.change_title_screen() //SKYRAT EDIT ADDITION - Title screen
-			addtimer(CALLBACK(SStitle, TYPE_PROC_REF(/datum/controller/subsystem/title, change_title_screen)), 1 SECONDS) //SKYRAT EDIT ADDITION - Title screen
-			//Everyone who wants to be an observer is now spawned
+			SStitle.change_title_screen() // EFFIGY EDIT ADD - SPLASH
+			addtimer(CALLBACK(SStitle, TYPE_PROC_REF(/datum/controller/subsystem/title, change_title_screen)), 1 SECONDS) // EFFIGY EDIT ADD - SPLASH
 			SEND_SIGNAL(src, COMSIG_TICKER_ENTER_PREGAME)
 			fire()
 		if(GAME_STATE_PREGAME)
@@ -363,13 +362,11 @@ SUBSYSTEM_DEF(ticker)
 			GLOB.joined_player_list += player.ckey
 			var/atom/destination = player.mind.assigned_role.get_roundstart_spawn_point()
 			if(!destination) // Failed to fetch a proper roundstart location, won't be going anywhere.
-				player.show_title_screen() //SKYRAT EDIT CHANGE
+				player.show_title_screen() // EFFIGY EDIT ADD - SPLASH
 				continue
 			player.create_character(destination)
-		else
-			player.show_title_screen() //SKYRAT EDIT ADDITION
-
-
+		else 							// EFFIGY EDIT ADD - SPLASH
+			player.show_title_screen() // EFFIGY EDIT ADD - SPLASH
 		CHECK_TICK
 
 /datum/controller/subsystem/ticker/proc/collect_minds()

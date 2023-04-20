@@ -1,4 +1,5 @@
-/* SKYRAT EDIT REMOVAL - Custom HTML Lobby Screen
+// EFFIGY EDIT REMOVE START - SPLASH
+/*
 /datum/hud/new_player
 
 /datum/hud/new_player/New(mob/owner)
@@ -373,4 +374,5 @@
 		return
 	var/mob/dead/new_player/new_player = hud.mymob
 	new_player.handle_player_polling()
-*/ // SKYRAT EDIT END
+*/
+// EFFIGY EDIT REMOVE END - SPLASH

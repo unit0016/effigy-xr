@@ -1,4 +1,5 @@
-/* SKYRAT EDIT REMOVAL
+// EFFIGY EDIT REMOVE START - SPLASH
+/*
 SUBSYSTEM_DEF(title)
 	name = "Title Screen"
 	flags = SS_NO_FIRE
@@ -70,3 +71,4 @@ SUBSYSTEM_DEF(title)
 	file_path = SStitle.file_path
 	previous_icon = SStitle.previous_icon
 */
+// EFFIGY EDIT REMOVE END - SPLASH
