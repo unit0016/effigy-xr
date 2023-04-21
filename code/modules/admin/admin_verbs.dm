@@ -139,7 +139,7 @@ GLOBAL_LIST_INIT(admin_verbs_fun, list(
 	/client/proc/toggle_nuke,
 	/client/proc/toggle_random_events,
 	/client/proc/fix_say, 						/*SKYRAT EDIT ADDITION*/
-	/client/proc/one_click_antag,				/*ONE CLICK ANTAG - SKYRAT EDIT ADDITION*/
+	/client/proc/one_click_antag,				/*SKYRAT EDIT ADDITION*/
 	/client/proc/request_more_opfor,			/*SKYRAT EDIT ADDITION*/
 	/client/proc/spawn_liquid,					/*SKYRAT EDIT ADDITION*/
 	/client/proc/spawn_mob_spawner,				/*SKYRAT EDIT ADDITION*/
