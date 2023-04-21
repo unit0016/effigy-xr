@@ -43,8 +43,8 @@ SUBSYSTEM_DEF(statpanels)
 			cached ? "Next Map: [cached.map_name]" : null,
 			"Round ID: [GLOB.round_id ? GLOB.round_id : "N/A"]",
 			"Server Rev: [server_rev ? server_rev : "N/A"]",
-			" ",
 			"Server Time: [time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")]",
+			" ",
 			"[SSticker.HasRoundStarted() ? "Round Time: [ROUND_TIME()]" : ""]",
 			"[SSticker.HasRoundStarted() ? "Adj. Round Time: [time2text(real_round_time, "hh:mm:ss", 0)]" : ""]",
 			"[SSticker.HasRoundStarted() ? "Station Time: [station_time_timestamp()]" : ""]"
