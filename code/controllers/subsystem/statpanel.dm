@@ -23,7 +23,8 @@ SUBSYSTEM_DEF(statpanels)
 	if (!resumed)
 		num_fires++
 		var/datum/map_config/cached = SSmapping.next_map_config
-		/* SKYRAT EDIT CHANGE
+		// EFFIGY EDIT CHANGE START - STATPANEL
+		/*
 		global_data = list(
 			"Map: [SSmapping.config?.map_name || "Loading..."]",
 			cached ? "Next Map: [cached.map_name]" : null,
@@ -34,23 +35,21 @@ SUBSYSTEM_DEF(statpanels)
 			"Time Dilation: [round(SStime_track.time_dilation_current,1)]% AVG:([round(SStime_track.time_dilation_avg_fast,1)]%, [round(SStime_track.time_dilation_avg,1)]%, [round(SStime_track.time_dilation_avg_slow,1)]%)"
 		)
 		*/
-		var/round_time = world.time - SSticker.round_start_time
 		var/real_round_time = world.timeofday - SSticker.real_round_start_time
+		var/server_rev = copytext(GLOB.revdata.commit, 1, 8)
 		global_data = list(
-			"Time Dilation: [round(SStime_track.time_dilation_current,1)]% AVG:([round(SStime_track.time_dilation_avg_fast,1)]%, [round(SStime_track.time_dilation_avg,1)]%, [round(SStime_track.time_dilation_avg_slow,1)]%)",
+			"Time Dilation: [round(SStime_track.time_dilation_current,1)]% Average: [round(SStime_track.time_dilation_avg_fast,1)]% / [round(SStime_track.time_dilation_avg,1)]% / [round(SStime_track.time_dilation_avg_slow,1)]%",
 			"Map: [SSmapping.config?.map_name || "Loading..."]",
 			cached ? "Next Map: [cached.map_name]" : null,
-			"Round ID: [GLOB.round_id ? GLOB.round_id : "NULL"]",
-			"Connected Players: [GLOB.clients.len]",
-			" ",
-			"OOC: [GLOB.ooc_allowed ? "Enabled" : "Disabled"]",
+			"Round ID: [GLOB.round_id ? GLOB.round_id : "N/A"]",
+			"Server Rev: [server_rev ? server_rev : "N/A"]",
 			" ",
 			"Server Time: [time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")]",
-			"Station Time: [station_time_timestamp()]",
-			"Round Timer: [round_time > MIDNIGHT_ROLLOVER ? "[round(round_time/MIDNIGHT_ROLLOVER)]:[worldtime2text()]" : worldtime2text()]",
-			"Actual Round Timer: [time2text(real_round_time, "hh:mm:ss", 0)]"
+			"Round Time: [ROUND_TIME()]",
+			"Adj. Round Time: [time2text(real_round_time, "hh:mm:ss", 0)]",
+			"Station Time: [station_time_timestamp()]"
 		)
-		// SKYRAT EDIT END
+		// EFFIGY EDIT CHANGE END - STATPANEL
 
 		if(SSshuttle.emergency)
 			var/ETA = SSshuttle.emergency.getModeStr()
