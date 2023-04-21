@@ -45,9 +45,9 @@ SUBSYSTEM_DEF(statpanels)
 			"Server Rev: [server_rev ? server_rev : "N/A"]",
 			" ",
 			"Server Time: [time2text(world.timeofday, "YYYY-MM-DD hh:mm:ss")]",
-			"Round Time: [ROUND_TIME()]",
-			"Adj. Round Time: [time2text(real_round_time, "hh:mm:ss", 0)]",
-			"Station Time: [station_time_timestamp()]"
+			"[SSticker.HasRoundStarted() ? "Round Time: [ROUND_TIME()]" : ""]",
+			"[SSticker.HasRoundStarted() ? "Adj. Round Time: [time2text(real_round_time, "hh:mm:ss", 0)]" : ""]",
+			"[SSticker.HasRoundStarted() ? "Station Time: [station_time_timestamp()]" : ""]"
 		)
 		// EFFIGY EDIT CHANGE END - STATPANEL
 
