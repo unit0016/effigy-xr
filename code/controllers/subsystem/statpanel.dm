@@ -38,7 +38,7 @@ SUBSYSTEM_DEF(statpanels)
 		var/real_round_time = world.timeofday - SSticker.real_round_start_time
 		var/server_rev = copytext(GLOB.revdata.commit, 1, 8)
 		global_data = list(
-			"Time Dilation: [round(SStime_track.time_dilation_current,1)]% Average: [round(SStime_track.time_dilation_avg_fast,1)]% / [round(SStime_track.time_dilation_avg,1)]% / [round(SStime_track.time_dilation_avg_slow,1)]%",
+			"Time Dilation: [round(SStime_track.time_dilation_current,1)]% (Average: [round(SStime_track.time_dilation_avg_fast,1)]% / [round(SStime_track.time_dilation_avg,1)]% / [round(SStime_track.time_dilation_avg_slow,1)]%)",
 			"Map: [SSmapping.config?.map_name || "Loading..."]",
 			cached ? "Next Map: [cached.map_name]" : null,
 			"Round ID: [GLOB.round_id ? GLOB.round_id : "N/A"]",
