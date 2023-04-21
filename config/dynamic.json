@@ -1,10 +1,24 @@
 {
-	"Dynamic": {},
+	"Dynamic": {
+        "threat_curve_centre": -4,
+        "threat_curve_width": 1.4,
+        "roundstart_split_curve_centre": 1,
+        "roundstart_split_curve_width": 1.4,
+        "midround_roll_distance": 2400,
+        "midround_lower_bound": 9000,
+		"midround_upper_bound": 54000,
+        "midround_heavy_lower_bound": 36000,
+        "latejoin_delay_min": 9000,
+        "latejoin_delay_max": 18000,
+        "pop_per_requirement": 7,
+		"hijacked_random_event_injection_chance_modifier": 25,
+		"threat_per_midround_roll": 9
+    },
 	"Roundstart": {
 		"Traitors": {
-			"cost": 8,
-			"scaling_cost": 9,
-			"weight": 0,
+			"cost": 10,
+			"scaling_cost": 10,
+			"weight": 7,
 			"required_candidates": 1,
 			"minimum_required_age": 0,
 			"requirements": [
@@ -20,7 +34,7 @@
 				10
 			],
 			"antag_cap": {
-				"denominator": 24
+				"denominator": 28
 			},
 			"protected_roles": [
 				"Prisoner",
@@ -37,7 +51,12 @@
 				"Chief Engineer",
 				"Chief Medical Officer",
 				"Research Director",
-				"Quartermaster"
+				"Quartermaster",
+				"Science Guard",
+				"Orderly",
+				"Service Guard",
+				"Engineering Guard",
+				"Customs Agent"
 			],
 			"restricted_roles": [
 				"Cyborg"
@@ -45,19 +64,72 @@
 		},
 
 		"Blood Brothers": {
-			"weight": 0
+			"weight": 2
 		},
 
 		"Changelings": {
-			"weight": 0
+			"weight": 3,
+			"scaling_cost": 16,
+			"antag_cap": {
+				"denominator": 34
+			},
+			"protected_roles": [
+				"Prisoner",
+				"Blueshield",
+				"Corrections Officer",
+				"Security Officer",
+				"Warden",
+				"Detective",
+				"Security Medic",
+				"Head of Security",
+				"Captain",
+				"Nanotrasen Consultant",
+				"Head of Personnel",
+				"Chief Engineer",
+				"Chief Medical Officer",
+				"Research Director",
+				"Quartermaster",
+				"Science Guard",
+				"Orderly",
+				"Service Guard",
+				"Engineering Guard",
+				"Customs Agent"
+			]
 		},
 
 		"Heretics": {
-			"weight": 0
+			"weight": 3,
+			"cost": 14,
+			"protected_roles": [
+				"Prisoner",
+				"Blueshield",
+				"Corrections Officer",
+				"Security Officer",
+				"Warden",
+				"Detective",
+				"Security Medic",
+				"Head of Security",
+				"Captain",
+				"Nanotrasen Consultant",
+				"Head of Personnel",
+				"Chief Engineer",
+				"Chief Medical Officer",
+				"Research Director",
+				"Quartermaster",
+				"Science Guard",
+				"Orderly",
+				"Service Guard",
+				"Engineering Guard",
+				"Customs Agent"
+			],
+			"antag_cap": {
+				"denominator": 28
+			}
 		},
 
 		"Wizard": {
-			"weight": 0
+			"weight": 2,
+			"cost": 24
 		},
 
 		"Blood Cult": {
@@ -65,11 +137,17 @@
 		},
 
 		"Nuclear Emergency": {
-			"weight": 0
+			"weight": 2,
+			"cost": 30,
+			"antag_cap": {
+				"denominator": 34,
+				"offset": 1
+			}
 		},
 
 		"Revolution": {
-			"weight": 0
+			"weight": 3,
+			"cost": 24
 		}
 	},
 
@@ -79,19 +157,22 @@
 		},
 
 		"Malfunctioning AI": {
-			"weight": 0
+			"weight": 2,
+			"cost": 14
 		},
 
 		"Wizard": {
-			"weight": 0
+			"weight": 1,
+			"cost": 20
 		},
 
 		"Nuclear Assault": {
-			"weight": 0
+			"weight": 5
 		},
 
 		"Blob": {
-			"weight": 0
+			"weight": 3,
+			"cost": 12
 		},
 
 		"Blob Infection": {
@@ -99,15 +180,18 @@
 		},
 
 		"Alien Infestation": {
-			"weight": 0
+			"weight": 5,
+			"cost": 12
 		},
 
 		"Nightmare": {
-			"weight": 0
+			"weight": 3,
+			"cost": 7
 		},
 
 		"Space Dragon": {
-			"weight": 0
+			"weight": 4,
+			"cost": 9
 		},
 
 		"Abductors": {
@@ -115,7 +199,8 @@
 		},
 
 		"Space Ninja": {
-			"weight": 0
+			"weight": 4,
+			"cost": 14
 		},
 
 		"Spiders": {
@@ -123,7 +208,8 @@
 		},
 
 		"Revenant": {
-			"weight": 0
+			"weight": 4,
+			"cost":  9
 		},
 
 		"Sentient Disease": {
@@ -131,7 +217,8 @@
 		},
 
 		"Space Pirates": {
-			"weight": 0
+			"weight": 3,
+			"cost": 14
 		},
 
 		"Obsessed": {
@@ -139,7 +226,8 @@
 		},
 
 		"Space Changeling": {
-			"weight": 0
+			"weight": 3,
+			"cost": 12
 		},
 
 		"Paradox Clone": {
@@ -149,11 +237,13 @@
 
 	"Latejoin": {
 		"Syndicate Infiltrator": {
-			"weight": 0
+			"weight": 11,
+			"cost": 7
 		},
 
 		"Provocateur": {
-			"weight": 0
+			"weight": 1,
+			"cost": 14
 		},
 
 		"Heretic Smuggler": {

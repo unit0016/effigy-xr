@@ -45,7 +45,7 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 	  * If it is seven the range is:
 	  * 0-6, 7-13, 14-20, 21-27, 28-34, 35-41, 42-48, 49-55, 56-62, 63+
 	  */
-	var/pop_per_requirement = 6
+	var/pop_per_requirement = 7
 	/// Number of players who were ready on roundstart.
 	var/roundstart_pop_ready = 0
 	/// List of candidates used on roundstart rulesets.
@@ -98,7 +98,7 @@ GLOBAL_VAR_INIT(dynamic_forced_threat_level, -1)
 	/// Basically, if this is set to 5, then for every 5 threat, one midround roll will be added.
 	/// The equation this is used in rounds up, meaning that if this is set to 5, and you have 6
 	/// threat, then you will get 2 midround rolls.
-	var/threat_per_midround_roll = 7
+	var/threat_per_midround_roll = 9
 
 	/// A number between -5 and +5.
 	/// A negative value will give a more peaceful round and
