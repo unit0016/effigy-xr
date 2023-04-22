@@ -20,7 +20,7 @@ const NtosMODsuitContent = (props, context) => {
   const { has_suit } = data;
   if (!has_suit) {
     return (
-      <NoticeBox mt={1} mb={0} danger fontSize="12px">
+      <NoticeBox mt={1} mb={0} danger fontSize="14px">
         No Modular suit connected, please tap a suit on the application host to
         sync on
       </NoticeBox>
