@@ -24,14 +24,13 @@ export const FONTS_DISABLED = 'Default';
 
 export const FONTS = [
   FONTS_DISABLED,
-  'Verdana',
+  'IBM Plex Sans',
+  'Signika',
+  'Titillium Web',
+  'Tahoma',
   'Arial',
-  'Arial Black',
   'Comic Sans MS',
   'Impact',
-  'Lucida Sans Unicode',
-  'Tahoma',
-  'Trebuchet MS',
   'Courier New',
   'Lucida Console',
 ];
