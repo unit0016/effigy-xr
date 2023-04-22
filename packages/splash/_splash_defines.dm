@@ -1,4 +1,4 @@
-#define DEFAULT_TITLE_MAP_LOADTIME (120 SECONDS)
+#define DEFAULT_TITLE_MAP_LOADTIME (40 SECONDS)
 
 #define DEFAULT_TITLE_SCREEN_IMAGE 'packages/splash/assets/title.png'
 #define DEFAULT_TITLE_LOADING_SCREEN 'packages/splash/assets/loading.gif'
