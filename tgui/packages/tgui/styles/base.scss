@@ -5,6 +5,7 @@
 
 @use 'sass:color';
 @use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;1,500;1,700&display=swap');
 
 $color-fg: #ffffff !default;
 $color-bg: #252525 !default;
@@ -19,7 +20,7 @@ $color-bg-end: color.adjust(
   $lightness: -$color-bg-grad-spread
 ) !default;
 
-$unit: 12px;
+$unit: 14px;
 $font-size: 1 * $unit !default;
 $border-radius: 0.16em !default;
 
