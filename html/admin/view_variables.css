@@ -1,16 +1,16 @@
 body {
 	font-family: 'Segoe UI Semibold', Tahoma, sans-serif;
-	font-size: 11px;
+	font-size: 12px;
 }
 .value {
-	font-family: "Ubuntu Mono", "Courier New", monospace;
+	font-family: 'Ubuntu Mono', 'Courier New', monospace;
 	font-size: 9pt;
 	display: inline-block;
 }
 
 table.matrix {
 	border-collapse: collapse; border-spacing: 0;
-	font-size: 7pt;
+	font-size: 9pt;
 }
 .matrix td{
 	text-align: center;
