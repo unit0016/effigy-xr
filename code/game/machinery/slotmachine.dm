@@ -137,7 +137,7 @@
 
 /obj/machinery/computer/slot_machine/ui_interact(mob/living/user)
 	. = ..()
-	var/reeltext = {"<center><font face=\"courier new\">
+	var/reeltext = {"<center><font face=\"Ubunto Mono\", monospace>
 	/*****^*****^*****^*****^*****\\<BR>
 	| \[[reels[1][1]]\] | \[[reels[2][1]]\] | \[[reels[3][1]]\] | \[[reels[4][1]]\] | \[[reels[5][1]]\] |<BR>
 	| \[[reels[1][2]]\] | \[[reels[2][2]]\] | \[[reels[3][2]]\] | \[[reels[4][2]]\] | \[[reels[5][2]]\] |<BR>

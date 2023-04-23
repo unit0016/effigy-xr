@@ -7,7 +7,7 @@
 // Sample font-size: DM: 8 CSS: 64px
 
 /client/script = {"<style>
-@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,600;1,500;1,600&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Titillium+Web:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 </style>
 <style>
 body					{font-family: 'Chakra Petch', sans-serif;}
@@ -134,7 +134,7 @@ h1.alert, h2.alert		{color: #000000;}
 
 .sans					{font-family: "Comic Sans MS", cursive, sans-serif;}
 .papyrus				{font-family: "Papyrus", cursive, sans-serif;}
-.robot					{font-family: "Courier New", cursive, sans-serif;}
+.robot					{font-family: "Ubuntu Mono", "Courier New", monospace;}
 
 .command_headset		{font-weight: bold;	font-size: 3;}
 .small					{font-size: 1;}
@@ -145,7 +145,7 @@ h1.alert, h2.alert		{color: #000000;}
 .redtext				{color: #FF0000;	font-size: 3;}
 .clown					{color: #FF69Bf;	font-size: 3;	font-family: "Comic Sans MS", cursive, sans-serif;	font-weight: bold;}
 .singing				{font-family: "Trebuchet MS", cursive, sans-serif; font-style: italic;}
-.his_grace				{color: #15D512;	font-family: "Courier New", cursive, sans-serif;	font-style: italic;}
+.his_grace				{color: #15D512;	font-family: "Ubuntu Mono", "Courier New", monospace;	font-style: italic;}
 .hypnophrase			{color: #3bb5d3;	font-weight: bold;	animation: hypnocolor 1500ms infinite; animation-direction: alternate;}
 	@keyframes hypnocolor {
 		0%		{color: #0d0d0d;}

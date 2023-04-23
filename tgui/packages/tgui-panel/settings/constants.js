@@ -25,12 +25,12 @@ export const FONTS_DISABLED = 'Default';
 export const FONTS = [
   FONTS_DISABLED,
   'IBM Plex Sans',
-  'Signika',
   'Titillium Web',
+  'Segoe UI',
   'Tahoma',
   'Arial',
   'Comic Sans MS',
-  'Impact',
+  'Ubuntu Mono',
   'Courier New',
   'Lucida Console',
 ];
