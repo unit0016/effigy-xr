@@ -61,10 +61,10 @@
 				.container_progress {
 					position: absolute;
 					box-sizing: border-box;
-					top: 26vmin;
-					left: 16vmin;
+					top: 90%;
+					left: 21vmin;
 					height: 4vmin;
-					width: calc(100% - 32vmin);
+					width: calc(100% - 42vmin);
 					border-top: 4px solid #FCFCFC;
 					border-bottom: 4px solid #FCFCFC;
 					border-left: 4px solid #FCFCFC;
