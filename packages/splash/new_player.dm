@@ -93,11 +93,6 @@
 	src << browse(SStitle.current_title_screen, "file=loading.gif;display=0")
 	src << browse(dat, "window=title_browser")
 
-/datum/asset/simple/lobby
-	assets = list(
-		"VCR_OSD_Mono.ttf" = 'interface/VCR_OSD_Mono.ttf',
-	)
-
 /**
  * Removes the titlescreen entirely from a mob.
  */
