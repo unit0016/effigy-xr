@@ -10,7 +10,7 @@
 /turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "c" = (
-/obj/structure/chair/sofa/bench/right{
+/obj/structure/chair/sofa/bench/tram/right{
 	dir = 1
 	},
 /turf/open/floor/iron/shuttle/arrivals,
@@ -61,13 +61,12 @@
 	},
 /area/shuttle/arrival)
 "m" = (
-/obj/structure/chair/sofa/bench/right,
+/obj/structure/chair/sofa/bench/tram/right,
 /turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "n" = (
-/turf/open/floor/iron/shuttle/arrivals{
-	icon_state = "sign_1"
-	},
+/obj/effect/turf_decal/delivery/blue,
+/turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "o" = (
 /obj/docking_port/mobile/arrivals_skyrat,
@@ -95,6 +94,7 @@
 /obj/machinery/status_display/shuttle/directional/south{
 	shuttle_id = "arrivals_shuttle"
 	},
+/obj/effect/turf_decal/delivery/red,
 /turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "t" = (
@@ -109,9 +109,8 @@
 /area/shuttle/arrival)
 "v" = (
 /obj/machinery/light/directional/west,
-/turf/open/floor/iron/shuttle/arrivals{
-	icon_state = "sign_2"
-	},
+/obj/effect/turf_decal/loading_area/white,
+/turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "w" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
@@ -176,18 +175,16 @@
 /area/shuttle/arrival)
 "M" = (
 /obj/structure/closet/crate/bin,
-/turf/open/floor/iron/shuttle/arrivals{
-	icon_state = "sign_1"
-	},
+/obj/effect/turf_decal/delivery/blue,
+/turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "N" = (
 /obj/machinery/light/directional/south,
-/turf/open/floor/iron/shuttle/arrivals{
-	icon_state = "sign_3"
-	},
+/obj/effect/turf_decal/bot_blue,
+/turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "O" = (
-/obj/structure/chair/sofa/bench/left{
+/obj/structure/chair/sofa/bench/tram/left{
 	dir = 1
 	},
 /turf/open/floor/iron/shuttle/arrivals,
@@ -208,7 +205,7 @@
 	},
 /area/shuttle/arrival)
 "S" = (
-/obj/structure/chair/sofa/bench/left,
+/obj/structure/chair/sofa/bench/tram/left,
 /turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "T" = (
@@ -218,6 +215,7 @@
 /area/shuttle/arrival)
 "U" = (
 /obj/machinery/door/airlock/external,
+/obj/effect/turf_decal/delivery/red,
 /turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "V" = (
@@ -231,9 +229,8 @@
 /area/shuttle/arrival)
 "X" = (
 /obj/machinery/light/directional/east,
-/turf/open/floor/iron/shuttle/arrivals{
-	icon_state = "sign_2"
-	},
+/obj/effect/turf_decal/loading_area/white,
+/turf/open/floor/iron/shuttle/arrivals,
 /area/shuttle/arrival)
 "Y" = (
 /turf/closed/wall/mineral/titanium/shuttle_wall/arrivals{
