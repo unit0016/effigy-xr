@@ -59,7 +59,7 @@ export const Adminhelp = (props, context) => {
                   <Box
                     mt={1}
                     width="100%"
-                    fontFamily="arial"
+                    fontFamily="Chakra Petch"
                     backgroundColor="grey"
                     style={{
                       'font-style': 'normal',
