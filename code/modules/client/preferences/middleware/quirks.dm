@@ -38,7 +38,6 @@
 			"icon" = initial(quirk.icon),
 			"name" = quirk_name,
 			"value" = initial(quirk.value),
-			"veteran_only" = initial(quirk.veteran_only), // SKYRAT EDIT - Veteran quirks
 		)
 
 	return list(
@@ -53,15 +52,8 @@
 /datum/preference_middleware/quirks/proc/give_quirk(list/params, mob/user)
 	var/quirk_name = params["quirk"]
 
-	//SKYRAT EDIT ADDITION
-	var/list/quirks = SSquirks.get_quirks()
-	var/datum/quirk/quirk = quirks[quirk_name]
-	if(initial(quirk.veteran_only) && !is_veteran_player(preferences?.parent))
-		return FALSE
-	//SKYRAT EDIT END
-
 	var/list/new_quirks = preferences.all_quirks | quirk_name
-	if (SSquirks.filter_invalid_quirks(new_quirks, preferences.augments) != new_quirks)// SKYRAT EDIT - AUGMENTS+
+	if (SSquirks.filter_invalid_quirks(new_quirks) != new_quirks)
 		// If the client is sending an invalid give_quirk, that means that
 		// something went wrong with the client prediction, so we should
 		// catch it back up to speed.
@@ -77,7 +69,10 @@
 	var/quirk_name = params["quirk"]
 
 	var/list/new_quirks = preferences.all_quirks - quirk_name
-	if (!(quirk_name in preferences.all_quirks) || SSquirks.filter_invalid_quirks(new_quirks, preferences.augments) != new_quirks)// SKYRAT EDIT - AUGMENTS+
+	if ( \
+		!(quirk_name in preferences.all_quirks) \
+		|| SSquirks.filter_invalid_quirks(new_quirks) != new_quirks \
+	)
 		// If the client is sending an invalid remove_quirk, that means that
 		// something went wrong with the client prediction, so we should
 		// catch it back up to speed.
@@ -93,13 +88,6 @@
 	var/list/selected_quirks = list()
 
 	for (var/quirk in preferences.all_quirks)
-		//SKYRAT EDIT ADDITION
-		var/list/quirks = SSquirks.get_quirks()
-		var/datum/quirk/quirk_datum = quirks[quirk]
-		if(initial(quirk_datum.veteran_only) && !is_veteran_player(preferences?.parent))
-			preferences.all_quirks -= quirk
-			continue
-		//SKYRAT EDIT END
 		selected_quirks += sanitize_css_class_name(quirk)
 
 	return selected_quirks

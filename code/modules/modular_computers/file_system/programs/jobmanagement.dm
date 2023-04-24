@@ -44,7 +44,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 
 
 /datum/computer_file/program/job_management/proc/can_edit_job(datum/job/job)
-	if(!job || !(job.job_flags & JOB_CREW_MEMBER) || (job.title in blacklisted) || job.veteran_only) //SKYRAT EDIT CHAGNE
+	if(!job || !(job.job_flags & JOB_CREW_MEMBER) || (job.title in blacklisted))
 		return FALSE
 	return TRUE
 

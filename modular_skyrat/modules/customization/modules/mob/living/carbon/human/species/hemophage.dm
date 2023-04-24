@@ -98,9 +98,6 @@
 	/// The current status of our tumor. If PULSATING_TUMOR_MISSING, all tumor-corrupted organs will start to decay rapidly. If PULSATING_TUMOR_INACTIVE, no enhanced regeneration.
 	var/tumor_status = PULSATING_TUMOR_MISSING
 
-	veteran_only = TRUE
-
-
 /datum/species/hemophage/check_roundstart_eligible()
 	if(check_holidays(HALLOWEEN))
 		return TRUE
