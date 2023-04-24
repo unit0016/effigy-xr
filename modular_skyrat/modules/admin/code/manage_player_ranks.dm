@@ -64,21 +64,11 @@
 					new /datum/mentors(player_to_be)
 					text2file(player_to_be, SKYRAT_MENTOR_CONFIG_FILE)
 
-				if ("Veteran")
-					for(var/a_veteran as anything in GLOB.veteran_players)
-						if(player_to_be == a_veteran)
-							to_chat(usr, span_warning("\"[player_to_be]\" is already a [group_title]!"))
-							return
-					// Now that we know that the ckey is valid and they're not already apart of that group, let's add them to it!
-					GLOB.veteran_players[player_to_be] = TRUE
-					text2file(player_to_be, SKYRAT_VETERAN_CONFIG_FILE)
-
 				else
 					return
 
 			message_admins("[key_name(usr)] has granted [group_title] status to [player_to_be].")
 			log_admin_private("[key_name(usr)] has granted [group_title] status to [player_to_be].")
-
 
 		if("Remove")
 			var/name = input(usr, "Please enter the CKEY (case-insensitive) of the person you would like to no longer be a [group_title]:", "Remove a [group_title]") as null|text
@@ -111,16 +101,6 @@
 					if(!changes)
 						to_chat(usr, span_warning("\"[player_that_was]\" was already not a [group_title]."))
 					save_mentors()
-
-				if("Veteran")
-					for(var/a_veteran as anything in GLOB.veteran_players)
-						if(player_that_was == a_veteran)
-							GLOB.veteran_players -= player_that_was
-							changes = TRUE
-					if(!changes)
-						to_chat(usr, span_warning("\"[player_that_was]\" was already not a [group_title]."))
-						return
-					save_veteran_players()
 
 				else
 					return

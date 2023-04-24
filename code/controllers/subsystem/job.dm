@@ -1112,11 +1112,7 @@ SUBSYSTEM_DEF(job)
 		JobDebug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_BANNED, possible_job.title)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
 		return JOB_UNAVAILABLE_BANNED
 
-	//SKYRAT EDIT ADDITION BEGIN - CUSTOMIZATION
-	if(possible_job.veteran_only && !is_veteran_player(player.client))
-		JobDebug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_NOT_VETERAN)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
-		return JOB_NOT_VETERAN
-
+	//EFFIGY EDIT ADD START - CUSTOMIZATION
 	if(possible_job.has_banned_quirk(player.client.prefs))
 		JobDebug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_QUIRK)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
 		return JOB_UNAVAILABLE_QUIRK
@@ -1132,10 +1128,7 @@ SUBSYSTEM_DEF(job)
 	if(length_char(player.client.prefs.read_preference(/datum/preference/text/flavor_text)) <= FLAVOR_TEXT_CHAR_REQUIREMENT)
 		JobDebug("[debug_prefix] Error: [get_job_unavailable_error_message(JOB_UNAVAILABLE_FLAVOUR)], Player: [player][add_job_to_log ? ", Job: [possible_job]" : ""]")
 		return JOB_UNAVAILABLE_FLAVOUR
-
-
-	//SKYRAT EDIT END
-
+	//EFFIGY EDIT ADD END - CUSTOMIZATION
 
 	// Run this check after is_banned_from since it can query the DB which may sleep.
 	// Need to recheck the player exists after is_banned_from since it can query the DB which may sleep.
