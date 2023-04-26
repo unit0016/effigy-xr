@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"map_name": "MiniStation",
+	"map_path": "map_files/ministation",
+	"map_file": "MiniStation.dmm",
+	"shuttles": {
+		"cargo": "cargo_skyrat",
+		"ferry": "ferry_kilo",
+		"whiteship": "whiteship_kilo",
+		"emergency": "emergency_kilo"
+	},
+	"job_changes": {
+		"Cook": {
+			"additional_cqc_areas": ["/area/station/service/bar", "/area/station/commons/lounge"]
+		}
+	}
+}
