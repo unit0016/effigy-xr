@@ -1,5 +1,19 @@
-<!-- Most valid html will work in here, but you have to use URL links for images. -->
-
-<h1>Welcome to Space Station 13!</h1>
-
-<i>This server is running a /tg/station 13 Git build.</i>
+<h1>Welcome to Effigy!</h1>
+<span class='adminnotice'>
+We are an 18+ only, roleplay focused, anthro-friendly server.
+<br/><br/>
+To avoid getting banned, make sure you read the rules!
+<br/><br/>
+For a host of useful information, take a look at the /tg/ Wiki.
+<br/><br/>
+Respawns are allowed only in the case to play a new character. (No respawning after character death in the same round.)<br/>
+Exception: You may immediately cryo and rejoin if you made a mistake in job selection/character creation and <b>have not yet interacted with the round.</b> Regardless if you spawned on station or the Interlink, head immediately to cryo.
+<br/><br/>
+As a reminder, out of character (OOC) communication is allowed while the shift is ongoing, however do <b>NOT</b> talk about the specifics of an ongoing round until it has completed (End of Round screen has appeared.)<br/>
+Asking general questions about how to do X are fine, so is chat unrelated to the round. Just please don't go overboard spammy with it.
+<br/><br/>
+Lots of us like a good traitor round, but remember to avoid recalling shuttles as an antagonist if the station is in clear disrepair, most players want to leave, etc. The rounds of other players are just as important as yours. Be a good sport!
+<br/><br/>
+Over utilizing any flavor of the month meme, like "imposter" or "sus" is a bit too OOC IC.<br/>
+Obviously if you have a reason to use them, like calling someone suspicious with sus its fine, however blurting them out at random is a bit much, don't do that.
+<br/></span>
