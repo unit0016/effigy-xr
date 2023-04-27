@@ -2564,6 +2564,7 @@
 "hJ" = (
 /obj/machinery/door/airlock/multi_tile/metal,
 /obj/structure/cable,
+/obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/science/server)
 "hK" = (
@@ -2687,6 +2688,13 @@
 /obj/machinery/newscaster/directional/west,
 /turf/open/floor/iron/smooth_large,
 /area/station/hallway/secondary/service)
+"ie" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/landmark/navigate_destination/research,
+/turf/open/floor/iron/white,
+/area/station/science/lobby)
 "if" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -6760,7 +6768,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/structure/chair/sofa/right{
+/obj/structure/chair/sofa/right/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/executive,
@@ -10771,6 +10779,7 @@
 /turf/open/floor/iron/showroomfloor,
 /area/station/command/heads_quarters/hop)
 "GV" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/iron/white/smooth_large,
 /area/station/science/server)
 "GW" = (
@@ -12926,6 +12935,12 @@
 /obj/machinery/light/small/directional/east,
 /turf/open/floor/iron/diagonal,
 /area/station/security/prison)
+"Nr" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/effect/mapping_helpers/airlock/access/all/science/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/turf/open/floor/plating,
+/area/station/maintenance/port/greater)
 "Ns" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 1
@@ -13000,7 +13015,7 @@
 /turf/open/floor/catwalk_floor,
 /area/station/engineering/atmos)
 "NF" = (
-/obj/structure/chair/sofa/left{
+/obj/structure/chair/sofa/left/brown{
 	dir = 8
 	},
 /turf/open/floor/carpet/executive,
@@ -13678,7 +13693,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/turf/open/floor/glass/reinforced/airless,
+/turf/open/floor/glass/reinforced,
 /area/station/science)
 "PA" = (
 /obj/structure/disposalpipe/segment{
@@ -16070,6 +16085,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/iron/dark,
 /area/station/engineering/gravity_generator)
+"Xf" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/supply/hidden/layer4,
+/obj/machinery/atmospherics/pipe/smart/manifold4w/scrubbers/hidden/layer2,
+/obj/effect/landmark/navigate_destination/sec,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
 "Xg" = (
 /obj/structure/table/wood,
 /obj/effect/mapping_helpers/broken_floor,
@@ -43547,7 +43569,7 @@ RB
 yE
 IM
 LY
-hP
+Xf
 bR
 yb
 TM
@@ -43800,7 +43822,7 @@ Ue
 Ue
 GG
 gB
-sq
+ie
 sq
 aY
 Tb
@@ -110872,7 +110894,7 @@ av
 av
 Wz
 yB
-yB
+Nr
 yB
 yB
 yB
