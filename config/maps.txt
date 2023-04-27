@@ -56,3 +56,10 @@ map voidraptor
 	maxplayers 100
 	votable
 endmap
+
+##EFFIGY MAPS##
+
+map foxholestation
+	maxplayers 25
+	votable
+endmap
